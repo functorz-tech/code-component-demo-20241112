@@ -1,0 +1,10 @@
+query sales_history($where: sales_history_bool_exp) {
+  sales_history(
+    where: $where
+  ) {
+    id
+    city_name
+    year
+    amount
+  }
+}

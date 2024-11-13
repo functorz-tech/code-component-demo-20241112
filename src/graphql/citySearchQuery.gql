@@ -1,0 +1,9 @@
+query citySearch($where: sales_history_bool_exp!, $distinct_on: [sales_history_select_column!]!) {
+  sales_history(
+    where: $where
+    distinct_on: $distinct_on
+    limit: 5
+  ) {
+    city_name
+  }
+} 
